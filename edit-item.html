@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To do list</title>
+</head>
+<body>
+  <input id="new-item" type="text" />
+  <button id="save-btn">Save</button>
+  <button id="back-btn">Back</button>
+  
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript">
+    var url = 'http://localhost:9081/todos';
+    var saveBtn = document.getElementById('save-btn');
+    // addBtn.onclick = addItem;
+    saveBtn.addEventListener('click', editItem);
+
+    var backBtn=document.getElementById('back-btn');
+    backBtn.addEventListener('click', backIndex);
+    function editItem() {
+      // get value of the input
+      
+    }
+    function backIndex(){
+        window.location.href='/';
+    }    
+  </script>
+</body>
+</html>
